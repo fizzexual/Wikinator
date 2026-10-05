@@ -1,0 +1,10 @@
+runtime/
+vendor/
+import/
+assets/reference/
+assets/minecraft/
+backups/
+.env
+config/InstalledSettings.php
+config/.seeded
+__pycache__/

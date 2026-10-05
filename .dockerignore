@@ -1,0 +1,8 @@
+.git
+runtime
+import
+assets
+backups
+.env
+config/InstalledSettings.php
+vendor/**/.git

@@ -1,0 +1,38 @@
+name: wikinator
+services:
+  db:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: wikinator
+      MARIADB_USER: wikinator
+      MARIADB_PASSWORD: ${DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - database:/var/lib/mysql
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+  wiki:
+    build: .
+    ports:
+      - '127.0.0.1:8087:80'
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./config:/wikinator/config
+      - ./config/LocalSettings.php:/var/www/html/LocalSettings.php:ro
+      - ./import:/wikinator/import
+      - ./scripts:/wikinator/scripts:ro
+      - ./runtime:/wikinator/runtime:ro
+      - ./assets:/var/www/html/wikinator-assets:ro
+      - uploads:/var/www/html/images
+    environment:
+      DB_PASSWORD: ${DB_PASSWORD}
+    restart: unless-stopped
+volumes:
+  database:
+  uploads:

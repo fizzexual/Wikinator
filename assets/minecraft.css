@@ -1,0 +1,37 @@
+/* Minecraft typography is deliberately scoped; prose and menus keep Noto Sans. */
+.wk-mc-image img { image-rendering:pixelated; }
+#firstHeading, .mw-parser-output h1, .mw-parser-output h2, .mw-parser-output h3,
+.mw-parser-output h4, .mw-parser-output h5, .mw-parser-output h6,
+.mw-parser-output .mw-headline, .wk-infobox-title, .wk-recipe-result,
+.wk-box-title, .wk-item-name, .wk-minecraft, .wk-tooltip-content,
+.inventory-tooltip, .item-tooltip, .minecraft-text {
+    font-family:'Minecraft','UnifontM','Noto Sans',sans-serif !important;
+    font-weight:normal;
+    line-height:1.45;
+    -webkit-font-smoothing:none;
+}
+.wk-mc-tooltip { position:relative; display:inline-block; }
+.wk-mc-tooltip > .wk-item-name { cursor:help; border-bottom:1px dotted currentColor; }
+.wk-tooltip-content { display:none; position:absolute; left:0; bottom:calc(100% + 8px); z-index:20; min-width:180px; max-width:min(310px,75vw); padding:10px 12px; background:#100515f5; color:#eee; border:2px solid #51008c; border-radius:3px; box-shadow:0 0 0 2px #09030d,0 6px 20px #0008; white-space:normal; font-size:16px; text-shadow:2px 2px #000; }
+.wk-mc-tooltip:hover .wk-tooltip-content,.wk-mc-tooltip:focus-within .wk-tooltip-content { display:block; }
+.wk-mc-toolbar { display:flex; gap:12px; align-items:end; flex-wrap:wrap; margin:16px 0; }
+.wk-mc-toolbar label { display:flex; flex-direction:column; gap:6px; flex:1; min-width:180px; }
+.wk-mc-toolbar input,.wk-mc-toolbar select,.wk-mc-details input { box-sizing:border-box; width:100%; background:var(--background-color-base,#1e1d2d); color:inherit; padding:9px 12px; border:1px solid #637084; border-radius:3px; font:inherit; }
+.wk-mc-layout { display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:20px; align-items:start; }
+.wk-mc-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(115px,1fr)); gap:8px; }
+.wk-mc-card { color:inherit; font:inherit; font-size:13px; background:var(--background-color-interactive,#2e2f3d); border:1px solid #485369; border-radius:3px; padding:10px 6px; cursor:pointer; min-height:118px; overflow-wrap:anywhere; }
+.wk-mc-card:hover,.wk-mc-card[aria-pressed=true] { border-color:#58c6ee; background:#24749433; }
+.wk-mc-preview { width:64px; height:64px; margin:0 auto 8px; display:flex; justify-content:center; align-items:center; overflow:hidden; background-color:#73737322; background-image:linear-gradient(45deg,#a1a1a111 25%,transparent 25%),linear-gradient(-45deg,#a1a1a111 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#a1a1a111 75%),linear-gradient(-45deg,transparent 75%,#a1a1a111 75%); background-size:16px 16px; }
+.wk-mc-preview img { max-width:100%;max-height:100%;object-fit:contain;image-rendering:pixelated; }
+.wk-mc-details { border:1px solid #485369; padding:16px; position:sticky; top:12px; }
+.wk-mc-details .wk-mc-preview { width:160px;height:160px; }
+.wk-mc-details h3 { margin-top:0; }
+.wk-mc-details p { overflow-wrap:anywhere; }
+.wk-mc-details label { display:block;margin:12px 0 4px; }
+.wk-mc-button { color:#fff;background:#267ca1;border:1px solid #4dadd5;border-radius:3px;padding:8px 12px;font:inherit;cursor:pointer; }
+.wk-mc-button:disabled { opacity:.45;cursor:default; }
+.wk-mc-copy-row { display:flex;gap:8px;margin:8px 0 14px;flex-wrap:wrap; }
+.wk-mc-pagination { display:flex;align-items:center;gap:12px;margin:16px 0; }
+.wk-mc-status { min-height:24px; }
+.wk-mc-details input { font-size:13px; }
+@media(max-width:850px){.wk-mc-layout{grid-template-columns:1fr}.wk-mc-details{position:static;grid-row:1}.wk-mc-details .wk-mc-preview{width:96px;height:96px}}

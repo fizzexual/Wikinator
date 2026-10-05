@@ -1,0 +1,42 @@
+{
+  "TemplateStylesExtender": {
+    "repository": "weirdgloop/mediawiki-extensions-TemplateStylesExtender",
+    "commit": "d5161d103d1e1f1b77dab4e31c9b5e18ec19c377",
+    "branch": "weirdgloop/master"
+  },
+  "Tabber": {
+    "repository": "weirdgloop/mediawiki-extensions-Tabber",
+    "commit": "efcfdc55fb154af479cae4a09753aa8d6947a8fb",
+    "branch": "weirdgloop/REL1_45"
+  },
+  "Vector": {
+    "repository": "weirdgloop/mediawiki-skins-Vector",
+    "commit": "f948b5d2fd6cd9c9726b24126a683009e66fe688",
+    "branch": "weirdgloop/REL1_45"
+  },
+  "CodeMirror": {
+    "repository": "wikimedia/mediawiki-extensions-CodeMirror",
+    "commit": "b22eb79f37f6cce08c729856828722ead92497d4",
+    "branch": "REL1_45"
+  },
+  "Loops": {
+    "repository": "wikimedia/mediawiki-extensions-Loops",
+    "commit": "f2479d48dec9ad60681a0c6ad3b186096d3c4c93",
+    "branch": "REL1_45"
+  },
+  "Variables": {
+    "repository": "wikimedia/mediawiki-extensions-Variables",
+    "commit": "36ec8171e465d94c3fe8cb675ac10fc9728ff118",
+    "branch": "REL1_45"
+  },
+  "Bucket": {
+    "repository": "weirdgloop/mediawiki-extensions-Bucket",
+    "commit": "92f4dba6509424cee18bf53532b5545091e3d34d",
+    "branch": "main"
+  },
+  "LabeledSectionTransclusion": {
+    "repository": "wikimedia/mediawiki-extensions-LabeledSectionTransclusion",
+    "commit": "4d55ee12024d22f8d235c99bff1055e751e7a0b4",
+    "branch": "REL1_45"
+  }
+}

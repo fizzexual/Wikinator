@@ -1,0 +1,29 @@
+/* Wikinator-specific identity and starter templates. Reference theme is separate. */
+#p-logo { position:relative; }
+#p-logo:after { content:'WIKINATOR'; position:absolute; bottom:3px; left:0; width:100%; text-align:center; letter-spacing:2px; font:bold 12px 'Noto Sans',sans-serif; color:#e6e6e6; pointer-events:none; }
+.wk-welcome { text-align:center; padding:18px 12px; margin-bottom:20px; border-bottom:1px solid var(--border-color-base,#44485d); }
+.wk-welcome strong { font-size:22px; }
+.wk-home-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.wk-box { border:1px solid var(--border-color-base,#44485d); background:var(--background-color-base,#1e1d2d); }
+.wk-box-title { background:#348fb8; padding:10px 16px; font-weight:700; font-size:18px; color:#fff; }
+.wk-box-body { padding:14px 20px; }
+.wk-box-body ul { margin-top:0; }
+.wk-infobox { float:right; clear:right; width:300px; margin:0 0 20px 22px; border:1px solid #3b5368; border-radius:3px; padding:2px; border-spacing:0; font-size:14px; }
+.wk-infobox th,.wk-infobox td { padding:9px; border-bottom:1px solid #3b5368; text-align:left; }
+.wk-infobox .wk-infobox-title { background:#348fb8; text-align:center; font-size:20px; color:#fff; }
+.wk-infobox .wk-section { background:#348fb8; text-align:center; color:#fff; }
+.wk-infobox .wk-item-image { text-align:center; height:160px; }
+.wk-infobox .wk-item-image img { image-rendering:pixelated; }
+.wk-infobox .wk-image-empty { color:#b1b6c6; font-size:14px; }
+.wk-recipe { display:inline-grid; grid-template-columns:repeat(3,52px); gap:3px; padding:9px; background:#c6c6c6; border:3px outset #eee; color:#111; vertical-align:middle; }
+.wk-slot { min-height:48px; display:flex; align-items:center; justify-content:center; background:#8b8b8b; border:2px inset #ddd; font-size:12px; text-align:center; overflow-wrap:anywhere; }
+.wk-slot a { color:#102730!important; }
+.wk-recipe-result { display:inline-block; padding:16px; font-weight:700; }
+.wk-note { padding:12px 16px; background:var(--background-color-interactive,#2e2f3d); border-left:3px solid #348fb8; margin:12px 0; }
+.wk-footer-clear { clear:both; }
+.wk-rarity-common { color:#eee; }.wk-rarity-uncommon { color:#55ff55; }.wk-rarity-rare { color:#55aaff; }.wk-rarity-epic { color:#cc66ff; }.wk-rarity-legendary { color:#ffaa00; }.wk-rarity-mythic { color:#ff55ff; }
+.wk-theme-toggle { border:0; background:transparent; color:inherit; cursor:pointer; font:inherit; padding:0; }
+html.wk-light { color-scheme:light; --background-color-base:#fff; --color-base:#202122; --body-background-color:#e9eef3; --body-main:#fff; --body-light:#e9eef3; --body-mid:#eaecf0; --border-color-base:#a2a9b1; }
+html.wk-light #content { background:#fff; color:#202122; }
+html.wk-light .wk-infobox { color:#202122; }
+@media(max-width:850px){.wk-home-grid{grid-template-columns:1fr}.wk-infobox{float:none;width:100%;margin:0 0 20px}.wk-recipe{grid-template-columns:repeat(3,44px)}}
