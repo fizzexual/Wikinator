@@ -1,8 +1,12 @@
-# Wikinator â€” local wiki
+# Wikinator â€” local wiki 🍂
 
 Open **http://localhost:8087/w/Main_Page**. Double-click **Start Wikinator.cmd** when you want to start it again. Docker Desktop must be running.
 
 Wikinator uses actual MediaWiki 1.45, the Weird Gloop Vector legacy skin, and a local adaptation of the Hypixel SkyBlock Wiki's public theme. It is a wiki for your own content, with original starter pages instead of imported Hypixel articles.
+
+## About
+
+Wikinator is a ready-to-run local MediaWiki setup for people who want their own Minecraft-style wiki on their PC, without hosting or Hypixel content. Docker Compose runs MediaWiki 1.45 with MariaDB, and Python scripts handle first-time setup, starter pages, Minecraft image import and backups. Status: a personal, local-only setup (bound to 127.0.0.1) built for Windows with Docker Desktop.
 
 ## Editing
 
